@@ -35,3 +35,36 @@ function Validar(){
 function Inicio () {
     alert("Seja bem vindo ao projeto ThinkFarm!")
 }
+
+var cont = 0
+function Tema(){
+    cont++
+    document.body.style.backgroundImage = 'linear-gradient(to right, rgb(73, 187, 187),  rgb(186, 228, 88), rgb(83, 190, 83))';
+
+    if (cont == 2) {
+        document.body.style.backgroundImage = 'linear-gradient(to right, rgb(73, 187, 187), rgb(83, 190, 83))'
+        cont = 0
+    }
+}
+
+var slides = document.querySelectorAll('.slide')
+var slideAtual = 0
+
+function showSlide(index) {
+    for(var i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none'
+    }
+
+    slides[index].style.display = 'block'
+}
+
+function nextSlide() {
+    slideAtual++
+    if (slideAtual >= slides.length) {
+        slideAtual = 0
+    }
+    showSlide(slideAtual)
+}
+
+showSlide(slideAtual)
+setInterval(nextSlide, 5000)
