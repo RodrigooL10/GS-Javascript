@@ -1,4 +1,6 @@
-RM 551771   marcelo tam
-RM 550295   Guilherme Dejulio
-RM 98326    Rodrigo Lima
-RM 98457    Eduardo Santos de Abreu
+# Grupo Atticus:
+- RM 98457  -  Eduardo Santos de Abreu
+- RM 550295 - Guilherme Dejulio
+- RM 551771 -  Marcelo Tan
+- RM 98326  -  Rodrigo Lima
+
